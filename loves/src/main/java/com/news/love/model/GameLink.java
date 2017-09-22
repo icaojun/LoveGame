@@ -1,7 +1,11 @@
 package com.news.love.model;
 
 /**
- * Created by Administrator on 2017/9/22.
+ * Created by yjc on 2017/9/22.
+ */
+
+/**
+ * 游戏链接类
  */
 public class GameLink {
 
