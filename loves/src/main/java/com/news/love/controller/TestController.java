@@ -12,7 +12,9 @@ public class TestController {
 
     @RequestMapping(value = "/test")
     public ModelAndView initLoad(){
-        ModelAndView mav = new ModelAndView("index");
+        System.out.print("ss-------------");
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("index");
         return mav;
     }
 }
