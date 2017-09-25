@@ -5,6 +5,10 @@ import java.security.MessageDigest;
 /**
  * Created by Administrator on 2017/9/21.
  */
+
+/**
+ * MD5加密
+ */
 public class MD5 {
     public static String MD5Copy(String url){
         //用于加密的字符
