@@ -14,7 +14,9 @@ public class GamePage {
 
     private String id; // 主键
 
-    private String url; // 链接
+    private String urlb; // 原始链接
+
+    private String urla; // 生成链接
 
     private String urlFrom; // 来源
 
@@ -40,8 +42,6 @@ public class GamePage {
 
     private List<GameImage> images; // 图片信息
 
-    private List<GameVideo> videos; // 视频信息
-
     public String getId() {
         return id;
     }
@@ -50,12 +50,20 @@ public class GamePage {
         this.id = id;
     }
 
-    public String getUrl() {
-        return url;
+    public String getUrlb() {
+        return urlb;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setUrlb(String urlb) {
+        this.urlb = urlb;
+    }
+
+    public String getUrla() {
+        return urla;
+    }
+
+    public void setUrla(String urla) {
+        this.urla = urla;
     }
 
     public String getUrlFrom() {
@@ -152,13 +160,5 @@ public class GamePage {
 
     public void setImages(List<GameImage> images) {
         this.images = images;
-    }
-
-    public List<GameVideo> getVideos() {
-        return videos;
-    }
-
-    public void setVideos(List<GameVideo> videos) {
-        this.videos = videos;
     }
 }
