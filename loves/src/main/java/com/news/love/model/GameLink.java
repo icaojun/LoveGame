@@ -4,6 +4,8 @@ package com.news.love.model;
  * Created by yjc on 2017/9/22.
  */
 
+import com.news.love.util.MD5;
+
 /**
  * 游戏链接类
  */
@@ -87,5 +89,16 @@ public class GameLink {
 
     public void setSubType(String subType) {
         this.subType = subType;
+    }
+
+    @Override
+    public String toString() {
+        return "GameLink{" +
+                "id='" +urlFrom + "_" + MD5.MD5Copy(url) + '\'' +
+                ", url='" + url + '\'' +
+                ", title='" + title + '\'' +
+                ", time=" + time +
+                ", mainType='" + mainType + '\'' +
+                '}';
     }
 }
