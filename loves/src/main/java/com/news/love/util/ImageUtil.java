@@ -13,6 +13,11 @@ import java.net.URL;
  */
 public class ImageUtil {
 
+    /*******************************************************
+     *
+     * @param url
+     * @return
+     *******************************************************/
     public static InputStream getInputStreamByGet(String url) {
         try {
             HttpURLConnection conn = (HttpURLConnection) new URL(url)
@@ -30,6 +35,11 @@ public class ImageUtil {
         return null;
     }
 
+    /*****************************************************
+     *
+     * @param is
+     * @param file
+     *****************************************************/
     public static void saveData(InputStream is, File file) {
         try{
             BufferedInputStream bis = new BufferedInputStream(is);

@@ -10,6 +10,12 @@ import java.security.MessageDigest;
  * MD5加密
  */
 public class MD5 {
+
+    /****************************************
+     * 对url进行MD5加密
+     * @param url
+     * @return
+     ****************************************/
     public static String MD5Copy(String url){
         //用于加密的字符
         char md5String[] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
