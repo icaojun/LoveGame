@@ -40,8 +40,6 @@ public class GamePage {
 
     private String html; // html内容
 
-    private List<GameImage> images; // 图片信息
-
     public String getId() {
         return id;
     }
@@ -154,11 +152,4 @@ public class GamePage {
         this.html = html;
     }
 
-    public List<GameImage> getImages() {
-        return images;
-    }
-
-    public void setImages(List<GameImage> images) {
-        this.images = images;
-    }
 }
